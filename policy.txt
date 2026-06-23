@@ -1,0 +1,63 @@
+FROZEN LAKE LEARNED OPTIMAL GREEDY POLICY DISPATCH
+===============================================
+Course: DSCD 614 - Reinforcement Learning
+Map Size: 8x8 Grid World
+Evaluation Success Rate: 100.00%
+Total Training Episodes: 5000
+
+GRID LEGEND:
+[ ← ] : Move LEFT  (Action 0)
+[ ↓ ] : Move DOWN  (Action 1)
+[ → ] : Move RIGHT (Action 2)
+[ ↑ ] : Move UP    (Action 3)
+[  H  ] : Terminal Hole State (Trapped Tile)
+[  G  ] : Terminal Goal State (Objective Reached)
+
+VISUAL POLICY MAP:
+-----------------------------------------
+ ↓   ↓   ↓   ↓   ↓   ↓   ↓   ↓
+ →   →   →   →   →   ↓   ↓   ↓
+ ↑   ↑   ↑   H   →   →   ↓   ↓
+ ↑   ↑   ↑   H   →   →   →   ↓
+ ↑   ↑   ↑   H   →   →   →   ↓
+ ↑   H   H   →   →   ↑   H   ↓
+ ↑   H   ←   ←   H   ↓   H   ↓
+ ←   ←   ←   H   ←   →   →   G
+-----------------------------------------
+
+STATE-BY-STATE DETERMINISTIC ACTION MATRIX:
+State 00 (Row 0, Col 0) [START] -> DOWN  | State 32 (Row 4, Col 0)         -> UP
+State 01 (Row 0, Col 1)         -> DOWN  | State 33 (Row 4, Col 1)         -> UP
+State 02 (Row 0, Col 2)         -> DOWN  | State 34 (Row 4, Col 2)         -> UP
+State 03 (Row 0, Col 3)         -> DOWN  | State 35 (Row 4, Col 3) [HOLE]  -> TERMINAL
+State 04 (Row 0, Col 4)         -> DOWN  | State 36 (Row 4, Col 4)         -> RIGHT
+State 05 (Row 0, Col 5)         -> DOWN  | State 37 (Row 4, Col 5)         -> RIGHT
+State 06 (Row 0, Col 6)         -> DOWN  | State 38 (Row 4, Col 6)         -> RIGHT
+State 07 (Row 0, Col 7)         -> DOWN  | State 39 (Row 4, Col 7)         -> DOWN
+State 08 (Row 1, Col 0)         -> RIGHT | State 40 (Row 5, Col 0)         -> UP
+State 09 (Row 1, Col 1)         -> RIGHT | State 41 (Row 5, Col 1) [HOLE]  -> TERMINAL
+State 10 (Row 1, Col 2)         -> RIGHT | State 42 (Row 5, Col 2) [HOLE]  -> TERMINAL
+State 11 (Row 1, Col 3)         -> RIGHT | State 43 (Row 5, Col 3)         -> RIGHT
+State 12 (Row 1, Col 4)         -> RIGHT | State 44 (Row 5, Col 4)         -> RIGHT
+State 13 (Row 1, Col 5)         -> DOWN  | State 45 (Row 5, Col 5)         -> UP
+State 14 (Row 1, Col 6)         -> DOWN  | State 46 (Row 5, Col 6) [HOLE]  -> TERMINAL
+State 15 (Row 1, Col 7)         -> DOWN  | State 47 (Row 5, Col 7)         -> DOWN
+State 16 (Row 2, Col 0)         -> UP    | State 48 (Row 6, Col 0)         -> UP
+State 17 (Row 2, Col 1)         -> UP    | State 49 (Row 6, Col 1) [HOLE]  -> TERMINAL
+State 18 (Row 2, Col 2)         -> UP    | State 50 (Row 6, Col 2)         -> LEFT
+State 19 (Row 2, Col 3) [HOLE]  -> TRAPPED| State 51 (Row 6, Col 3)         -> LEFT
+State 20 (Row 2, Col 4)         -> RIGHT | State 52 (Row 6, Col 4) [HOLE]  -> TERMINAL
+State 21 (Row 2, Col 5)         -> RIGHT | State 53 (Row 6, Col 5)         -> DOWN
+State 22 (Row 2, Col 6)         -> DOWN  | State 54 (Row 6, Col 6) [HOLE]  -> TERMINAL
+State 23 (Row 2, Col 7)         -> DOWN  | State 55 (Row 6, Col 7)         -> DOWN
+State 24 (Row 3, Col 0)         -> UP    | State 56 (Row 7, Col 0)         -> LEFT
+State 25 (Row 3, Col 1)         -> UP    | State 57 (Row 7, Col 1)         -> LEFT
+State 26 (Row 3, Col 2)         -> UP    | State 58 (Row 7, Col 2)         -> LEFT
+State 27 (Row 3, Col 3) [HOLE]  -> TRAPPED| State 59 (Row 7, Col 3) [HOLE]  -> TERMINAL
+State 28 (Row 3, Col 4)         -> RIGHT | State 60 (Row 7, Col 4)         -> LEFT
+State 29 (Row 3, Col 5)         -> RIGHT | State 61 (Row 7, Col 5)         -> RIGHT
+State 30 (Row 3, Col 6)         -> RIGHT | State 62 (Row 7, Col 6)         -> RIGHT
+State 31 (Row 3, Col 7)         -> DOWN  | State 63 (Row 7, Col 7) [GOAL]  -> SUCCESS
+
+===============================================
+End of Policy File.
